@@ -1,0 +1,61 @@
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#f7f8fa;color:#172033;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.header{height:72px;background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:100}
+.header .container{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.5px}
+.brand small{display:block;font-size:10px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase}
+.nav{display:flex;gap:26px;align-items:center}
+.nav a{font-size:14px;color:#475569}
+.nav a:hover,.nav a.active{color:#2563eb}
+.menu{display:none;border:0;background:none;font-size:24px}
+.hero{background:#fff;padding:95px 0 105px;border-bottom:1px solid #e5e7eb}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.7px;color:#2563eb;text-transform:uppercase;margin-bottom:15px}
+.hero h1{font-size:clamp(42px,7vw,72px);line-height:1.02;letter-spacing:-3px;max-width:850px;margin-bottom:22px}
+.hero p{font-size:18px;color:#64748b;max-width:690px}
+.btn{display:inline-block;margin-top:30px;padding:12px 20px;border-radius:7px;background:#172033;color:#fff;font-size:14px;font-weight:700}
+.btn:hover{background:#2563eb}
+.section{padding:80px 0}
+.section-head{margin-bottom:38px}
+.section-head h2{font-size:34px;letter-spacing:-1px}
+.section-head p{color:#64748b;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:30px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#bfdbfe;box-shadow:0 15px 35px rgba(15,23,42,.08)}
+.course-icon{width:50px;height:50px;border-radius:10px;background:#eff6ff;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px}
+.card h3{font-size:23px;line-height:1.25;margin-bottom:10px}
+.card p{font-size:14px;color:#64748b}
+.card-link{display:inline-block;margin-top:22px;color:#2563eb;font-size:13px;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
+.stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px}
+.stat strong{display:block;font-size:28px}.stat span{font-size:13px;color:#64748b}
+.dark{background:#172033;color:#fff}
+.dark p{color:#cbd5e1}
+.footer{background:#0f172a;color:#94a3b8;padding:28px 0;font-size:13px}
+.course-hero{padding:65px 0;background:#172033;color:#fff}
+.course-hero h1{font-size:48px;line-height:1.1;letter-spacing:-2px;margin:8px 0 12px}
+.course-hero p{color:#cbd5e1;max-width:700px}
+.breadcrumb{font-size:13px;color:#64748b;margin:22px 0}
+.breadcrumb a{color:#2563eb}
+.material-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.lesson{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px;display:flex;gap:18px;align-items:flex-start}
+.lesson:hover{border-color:#93c5fd}
+.lesson-num{min-width:38px;height:38px;border-radius:8px;background:#eff6ff;color:#2563eb;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.lesson h3{font-size:17px;margin-bottom:5px}
+.lesson p{font-size:13px;color:#64748b}
+.lesson small{display:inline-block;margin-top:10px;color:#2563eb;font-weight:700}
+.content{max-width:850px}
+.content h2{font-size:30px;margin:30px 0 12px}
+.content h3{font-size:21px;margin:25px 0 8px}
+.content p{margin-bottom:14px;color:#475569}
+.content ul{padding-left:22px;margin-bottom:18px;color:#475569}
+.note{background:#eff6ff;border-left:4px solid #2563eb;padding:16px 18px;border-radius:5px;margin:22px 0;color:#334155}
+.code{background:#111827;color:#e5e7eb;border-radius:8px;padding:18px;overflow:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;margin:18px 0}
+@media(max-width:700px){
+ .nav{display:none}.menu{display:block}.hero{padding:65px 0 75px}.hero h1{letter-spacing:-1.8px}
+ .grid,.material-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}
+ .course-hero h1{font-size:38px}.section{padding:60px 0}
+}
